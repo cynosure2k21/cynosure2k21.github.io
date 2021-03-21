@@ -1,0 +1,62 @@
+
+.item {
+  height: 40vh;
+  width: 40vh;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: pointer;
+  background:rgba(0, 0, 0, 0.4);
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+ .item img {
+  opacity: 100%;
+  position: relative;
+  margin:32px;
+}
+
+.item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 1;
+}
+
+.item .caption {
+  position: absolute;
+  bottom: -50px;
+  margin-left: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+ .item .caption h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.4em;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+.item .caption h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.1em;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+
+.item .caption p {
+  margin: 0;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+
+.item:hover .caption {
+  opacity: 1;
+  bottom: 10px;
+}
