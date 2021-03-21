@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    
+    <link rel="stylesheet" href="css/form6.css">
 
 </head>
 <div class="loader">
@@ -96,10 +96,50 @@
           Your browser does not support HTML5 video.
         </video>
       </div>
-    <section style=" background: linear-gradient( 
-        #003153, #4e6c86);">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeULth3bumWPfDpHeXe33USnbMws2nK9oMkWd58UaZinv0MgQ/viewform?embedded=true" width="640" height="1200" frameborder="0" style="margin: 0 auto; width: 100%;">Loading…</iframe>
-    </section>
+      <section style=" background: linear-gradient( 
+        #003153, #4e6c86); height: 820px;">
+        <div class="login-box">
+            <h2>Registration Form</h2> 
+            <h4>MCU Trivia</h4>
+            <br/><br/><br/>
+            <form id="mcu-trivia" name="mcu-trivia" onsubmit="return validateTrivia()" method="post">
+                <div class="user-box">
+                  <input id="name" type="text" name="" required="">
+                  <label>Name</label>
+                </div>
+                <div class="user-box">
+                  <input type="email" id="email" name="" required="">
+                  <label>Email</label>
+                </div>
+                <div class="user-box">
+                  <input type="tel" id="phone" name="" required="" pattern="[0-9]{10}" maxlength="10" >
+                  <label>Whatsapp Number</label>
+                </div>
+                <div class="user-box">
+                  <input type="text" id="college" name="" required="">
+                  <label>College</label>
+                </div>
+                <div class="user-box">
+                  <input type="text" id="course" name="" required="">
+                  <label>Course</label>
+                </div>
+                <div class="user-box">
+                  <input type="text" id="year"name="" required="">
+                  <label>Year</label>
+                </div>
+              
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button id="submit" type="button" 
+                style="border: none;color:#03e9f4 ;
+                background-color: rgba(0,0,0,0);font-size:20px;" >Submit</button>
+              </a>
+            </form>
+          </div>
+      </section>
     <footer class="footer_dark" style=" background:#003153">
         <div class="top_footer">
             <div class="container">
@@ -199,6 +239,8 @@
     <script src="js/magnific-popup.js"></script>
     <script src="js/waypoints.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/validateForm.js"></script>
+    
 
 </body>
 </html>

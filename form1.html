@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    
+    <link rel="stylesheet" href="css/form1.css">
 
 </head>
 <div class="loader">
@@ -96,6 +96,70 @@
           Your browser does not support HTML5 video.
         </video>
       </div>
+      <section style="background: linear-gradient( 
+        #003153, #4e6c86); height:1260px;">
+      <div class="login-box">
+        <h2>Registration Form</h2> 
+        <h4>(Inter-battle-view)</h4>
+        <br/><br/><br/>
+        <form id="inter-battle-view" name="inter-battle-view" onsubmit="return validateInterview()" method="post">
+            <div class="user-box">
+              <input id="name" type="text" name="" required="">
+              <label>Name</label>
+            </div>
+            <div class="user-box">
+              <input type="text" id="email" name="" required="">
+              <label>Email</label>
+            </div>
+            <div class="user-box">
+              <input type="tel" id="phone "name="" required="" pattern="[0-9]{10}" maxlength="10" >
+              <label>Whatsapp Number</label>
+            </div>
+            <div class="user-box">
+              <input type="text" id="college" name="" required="">
+              <label>College</label>
+            </div>
+            <div class="user-box">
+              <input type="text" id="course" name="" required="">
+              <label>Course</label>
+            </div>
+            <div class="user-box">
+              <input type="text" id="year"name="" required="">
+              <label>Year</label>
+            </div>
+          <div class="user-box">
+            <label>Upload  Your CV</label><br/><br/>
+            <input type="file" name="" id="file1" >
+            
+          </div>
+          <div class="user-box">
+              <label >Job Profiles</label><br><br></div>
+              
+          <input type="radio" id="p1" name="job" value="Software Analyst">
+          <label for="p1"style="color: white;">Software Analyst</label><br>
+          <input type="radio" id="p2" name="job" value="Data Analyst" >
+          <label for="p2" style="color: white;">Data Analyst</label><br>
+          <input type="radio" id="p3" name="job" value="Android Developer">
+          <label for="p3"style="color: white;">Android Developer</label><br>
+          <input type="radio" id="p4" name="job" value="Web Developer">
+          <label for="p4"style="color: white;">Web Developer</label><br>
+          <input type="radio" id="other" name="job" value="other" onclick="getFocus()">
+          <label for="other"style="color: white;">Other</label>
+          <div class="user-box">
+          <input id="other2" type="text" name="job">
+        </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <button id="submit" type="button" 
+            style="border: none;color:#03e9f4 ;
+            background-color: rgba(0,0,0,0);font-size:20px;" >Submit</button>
+          </a>
+        </form>
+      </div>
+    </section>
     <footer class="footer_dark" style=" background:#003153">
         <div class="top_footer">
             <div class="container">
@@ -195,6 +259,12 @@
     <script src="js/magnific-popup.js"></script>
     <script src="js/waypoints.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/validateForm.js"></script>
 
+    <script>
+        function getFocus() {
+         document.getElementById("other-profile").focus();
+    }
+    </script>
 </body>
 </html>
