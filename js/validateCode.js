@@ -27,7 +27,7 @@ codeForm.addEventListener("submit", function (event) {
 		.then((data) => {
 			console.log(data);
 			alert(data.message);
-		name = college = email = year = course = phone = "";
+			name = college = email = year = course = phone = "";
 			window.location.assign(
 				"https://mycode.prepbytes.com/contest/CODEATHONHANSRAJ"
 			);

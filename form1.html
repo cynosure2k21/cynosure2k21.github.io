@@ -102,7 +102,7 @@
         <h2>Registration Form</h2> 
         <h4>(Inter-Battle-View)</h4>
         <br/><br/><br/>
-        <form id="inter-battle-view" autocomplete="off" onsubmit="return validateInterview()" method="post">
+        <form id="inter-battle-view" autocomplete="off" method="post">
             <div class="user-box">
               <input id="name" type="text" required>
               <label>Name*</label>
@@ -128,8 +128,8 @@
               <label>Year*</label>
             </div>
           <div class="user-box">
-            <label>Upload  Your CV</label><br/><br/>
-            <input type="file" id="file1" >
+            <label>Paste link to your CV</label><br/><br/>
+            <input type="text" id="file1" >
             
           </div>
           <div class="user-box">
@@ -259,7 +259,7 @@
     <script src="js/magnific-popup.js"></script>
     <script src="js/waypoints.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/validateForm.js"></script>
+    <script src="js/validateInterview.js"></script>
 
     <script>
         function getFocus() {
