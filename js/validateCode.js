@@ -26,7 +26,7 @@ codeForm.addEventListener("submit", function (event) {
 		.then((res) => res.json())
 		.then((data) => {
 			console.log(data);
-			alert(data.message);
+			alert(`${data.message} Kindly register on event platform, PrepBytes now!`);
 			name = college = email = year = course = phone = "";
 			window.location.assign(
 				"https://mycode.prepbytes.com/contest/CODEATHONHANSRAJ"
