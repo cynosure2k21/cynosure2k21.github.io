@@ -4902,7 +4902,7 @@ div.media-featured:hover{
   
   .c-faq {
 	font-family: "Varela Round", sans-serif;
-	list-style: none;
+	list-style-type: style disc;
   }
   .c-faqs__headline {
 	font-family: "Varela Round", sans-serif;
