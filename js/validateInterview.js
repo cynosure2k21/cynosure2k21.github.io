@@ -26,7 +26,7 @@ interviewForm.addEventListener("submit", function (event) {
 			phoneNumber: phone.value,
 			course: course.value,
 			year: year.value,
-			college: year.value,
+			college: college.value,
 			resumeURL: resume.value,
 			selectedProfile,
 		}),
