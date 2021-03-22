@@ -1,6 +1,9 @@
 var labForm = document.getElementById("tech-labyrinth");
 
 labForm.addEventListener("submit", function (event) {
+	document
+		.getElementById("form1button")
+		.classList.add("fa-spinner", "fa-spin", "fa-2x");
 	var teamName = document.getElementById("teamName");
 	var name = document.getElementById("name");
 	var email = document.getElementById("email");
