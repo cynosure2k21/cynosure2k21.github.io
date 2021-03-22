@@ -41,9 +41,6 @@ labForm.addEventListener("submit", function (event) {
 			teamMemberEmail: email2.value,
 			memberInstaID: instId2.value,
 		}),
-		headers: {
-			"Content-Type": "application/json",
-		},
 	}).then(res =>res.json())
 		.then((data) => {
 			alert(data.message);
