@@ -112,15 +112,21 @@
               <input placeholder="Your Email Address" type="email" tabindex="2" required>
             </fieldset>
             <fieldset>
-              <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+              <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
             </fieldset>
             <fieldset>
               <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
             </fieldset>
             <fieldset>
-              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" >Submit</button>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onclick="submitted()">Submit</button>
             </fieldset>
           </form>
+          <script>
+            function submitted() 
+            {
+              alert("Response submitted!");
+             }
+          </script>
         </div>
         <div class="col-lg-6 col-sm-12" style="margin-top: 10px;">
           <ul class="contact_info contact_info_light list_none">
