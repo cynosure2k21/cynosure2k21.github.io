@@ -4792,6 +4792,7 @@ div.media-featured:hover{
 }
 #carouselExampleFade .carousel-item{
 	height: 50vh;
+	border-radius: 10%;
 }
 #carouselExampleFade div{
 	padding:10px;
