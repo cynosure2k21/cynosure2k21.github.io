@@ -9,11 +9,11 @@ interviewForm.addEventListener("submit", function (event) {
 	var phone = document.getElementById("phone");
 	var resume = document.getElementById("file1");
 	var profile = document.getElementsByName("job");
-
+	var selectedProfile = "";
         
     for(i = 0; i < profile.length; i++) { 
         if(profile[i].checked) 
-             let selectedProfile  = ele[i].value; 
+              selectedProfile  = ele[i].value; 
     } 
 
 	fetch("https://cynosure-admin.herokuapp.com/api/register", {
