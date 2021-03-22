@@ -34,6 +34,9 @@ interviewForm.addEventListener("submit", function (event) {
 		.then((res) => res.json())
 		.then((data) => {
 			alert(data.message);
+			window.location.assign(
+				"https://prepbytes.com/mock-tests/hansraj-inter-battle-view/test-1"
+			);
 		})
 		.catch((err) => {
 			console.log(err);

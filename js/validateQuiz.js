@@ -26,6 +26,7 @@ quizForm.addEventListener("submit", function (event) {
 		.then((res) => res.json())
 		.then((data) => {
 			alert(data.message);
+			window.location.assign("https://cynosure2k21.github.io/");
 		})
 		.catch((err) => {
 			console.log(err);
