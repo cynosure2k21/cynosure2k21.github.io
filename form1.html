@@ -100,32 +100,32 @@
         #003153, #4e6c86); height:1260px;">
       <div class="login-box">
         <h2>Registration Form</h2> 
-        <h4>(Inter-battle-view)</h4>
+        <h4>(Inter-Battle-View)</h4>
         <br/><br/><br/>
-        <form id="inter-battle-view" onsubmit="return validateInterview()" method="post">
+        <form id="inter-battle-view" autocomplete="off" onsubmit="return validateInterview()" method="post">
             <div class="user-box">
               <input id="name" type="text" required>
-              <label>Name</label>
+              <label>Name*</label>
             </div>
             <div class="user-box">
               <input type="email" id="email" required>
-              <label>Email</label>
+              <label>Email*</label>
             </div>
             <div class="user-box">
               <input type="tel" id="phone" required pattern="[0-9]{10}" maxlength="10" >
-              <label>Whatsapp Number</label>
+              <label>Whatsapp Number*</label>
             </div>
             <div class="user-box">
               <input type="text" id="college" required>
-              <label>College</label>
+              <label>College*</label>
             </div>
             <div class="user-box">
               <input type="text" id="course" required>
-              <label>Course</label>
+              <label>Course*</label>
             </div>
             <div class="user-box">
               <input type="text" id="year" required>
-              <label>Year</label>
+              <label>Year*</label>
             </div>
           <div class="user-box">
             <label>Upload  Your CV</label><br/><br/>
@@ -133,7 +133,7 @@
             
           </div>
           <div class="user-box">
-              <label >Job Profiles</label><br><br></div>
+              <label >Job Profiles*</label><br><br></div>
               
           <input type="radio" id="p1" name="job" value="Software Analyst">
           <label for="p1"style="color: white;">Software Analyst</label><br>
