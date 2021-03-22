@@ -10,11 +10,9 @@ interviewForm.addEventListener("submit", function (event) {
 	var resume = document.getElementById("file1");
 	var profile = document.getElementsByName("job");
 	var selectedProfile = "";
-        
-    for(i = 0; i < profile.length; i++) { 
-        if(profile[i].checked) 
-              selectedProfile  = ele[i].value; 
-    } 
+	for (i = 0; i < profile.length; i++) {
+		if (profile[i].checked) selectedProfile = profile[i].value;
+	}
 
 	fetch("https://cynosure-admin.herokuapp.com/api/register", {
 		method: "post",
@@ -30,7 +28,7 @@ interviewForm.addEventListener("submit", function (event) {
 			year: year.value,
 			college: year.value,
 			resumeURL: resume.value,
-            selectedProfile
+			selectedProfile,
 		}),
 	})
 		.then((res) => res.json())

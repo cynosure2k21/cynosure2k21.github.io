@@ -1,7 +1,7 @@
 var labForm = document.getElementById("tech-labyrinth");
 
 labForm.addEventListener("submit", function (event) {
-    var teamName = document.getElementById("teamName");
+	var teamName = document.getElementById("teamName");
 	var name = document.getElementById("name");
 	var email = document.getElementById("email");
 	var college = document.getElementById("college");
@@ -18,11 +18,11 @@ labForm.addEventListener("submit", function (event) {
 	var phone2 = document.getElementById("phone2");
 	var instId2 = document.getElementById("instaId2");
 
-    fetch("https://cynosure-admin.herokuapp.com/api/register", {
+	fetch("https://cynosure-admin.herokuapp.com/api/register", {
 		method: "POST",
-        headers:{
-            "Content-Type: application/json"
-        },
+		headers: {
+			"Content-Type": "application/json",
+		},
 		body: JSON.stringify({
 			eventId: "tech-labyrinth",
 			name: name.value,
@@ -41,7 +41,8 @@ labForm.addEventListener("submit", function (event) {
 			teamMemberEmail: email2.value,
 			memberInstaID: instId2.value,
 		}),
-	}).then(res =>res.json())
+	})
+		.then((res) => res.json())
 		.then((data) => {
 			alert(data.message);
 		})
@@ -50,5 +51,5 @@ labForm.addEventListener("submit", function (event) {
 			alert("Oppsss!!! Try again");
 		});
 
-        event.preventDefault()
-    })
+	event.preventDefault();
+});
