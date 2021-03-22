@@ -1,8 +1,8 @@
-$(window).load(function() {
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
-});
-
+$(window).load(function() { // makes sure the whole site is loaded
+    $('#loader').fadeOut(); // will first fade out the loading animation
+    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+    $('body').delay(350).css({'overflow':'visible'});
+})
 (function($) {
     'use strict';
     var headerHeight = $(".header_wrap").height() - 10;
