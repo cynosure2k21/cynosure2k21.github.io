@@ -1,6 +1,9 @@
 const codeForm = document.getElementById("code-a-thon");
 
 codeForm.addEventListener("submit", function (event) {
+	document
+		.getElementById("form1button")
+		.classList.add("fa-spinner", "fa-spin", "fa-2x");
 	let name = document.getElementById("name").value;
 	let email = document.getElementById("email").value;
 	let college = document.getElementById("college").value;
