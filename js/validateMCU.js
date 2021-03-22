@@ -1,6 +1,6 @@
-const codeForm = document.getElementById("code-a-thon");
+const mcuForm = document.getElementById("mcu-trivia");
 
-codeForm.addEventListener("submit", function (event) {
+mcuForm.addEventListener("submit", function (event) {
 	let name = document.getElementById("name").value;
 	let email = document.getElementById("email").value;
 	let college = document.getElementById("college").value;
@@ -14,7 +14,7 @@ codeForm.addEventListener("submit", function (event) {
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({
-			eventId: "Code-a-thon",
+			eventId: "mcu-trivia",
 			name,
 			email,
 			phoneNumber: phone,
@@ -26,13 +26,9 @@ codeForm.addEventListener("submit", function (event) {
 		.then((res) => res.json())
 		.then((data) => {
 			console.log(data);
-			alert(
-				data.message + " Kindly register on event platform, PrepBytes now!"
-			);
+			alert(data.message);
 			name = college = email = year = course = phone = "";
-			window.location.assign(
-				"https://mycode.prepbytes.com/contest/CODEATHONHANSRAJ"
-			);
+			window.location.assign("https://cynosure2k21.github.io/");
 		})
 		.catch((err) => {
 			console.log(err);
