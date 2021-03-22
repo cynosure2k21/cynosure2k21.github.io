@@ -13,7 +13,10 @@
  .item img {
   opacity: 100%;
   position: relative;
-  margin:32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
 }
 
 .item:hover img {
