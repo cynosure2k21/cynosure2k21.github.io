@@ -1,6 +1,9 @@
 var interviewForm = document.getElementById("inter-battle-view");
 
 interviewForm.addEventListener("submit", function (event) {
+	document
+		.getElementById("form1button")
+		.classList.add("fa-spinner", "fa-spin", "fa-2x");
 	var name = document.getElementById("name");
 	var email = document.getElementById("email");
 	var college = document.getElementById("college");
